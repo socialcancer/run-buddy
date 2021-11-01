@@ -173,9 +173,6 @@ section {
   justify-content: space-between;
 }
 
-.steps div {
-}
-
 .step-img {
   flex: 1 12%;
   margin-right: 20px;
