@@ -112,7 +112,6 @@ section {
   margin: 0 5px;
 }
 .intro {
-  text-align: center;
 }
 .intro h2 {
   font-size: 55px;
@@ -132,9 +131,9 @@ section {
   width: 80%;
   font-size: 20px;
   margin: 0 auto;
+  text-align: center;
 }
 .steps {
-  text-align: center;
   background: var(--yellow);
 }
 
@@ -163,27 +162,55 @@ section {
   border-color: var(--aqua-marina);
 }
 
+.step {
+  margin: 50px auto;
+  padding-bottom: 50px;
+  width: 80%;
+  border-bottom: 1px solid var(--aqua-marina);
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
 .steps div {
-  margin-bottom: 80px;
 }
 
-.steps img {
-  width: 15%;
-  margin: 10px 0;
+.step-img {
+  flex: 1 12%;
+  margin-right: 20px;
+}
+.step-img img {
+  max-width: 100%;
 }
 
-.steps h3 {
+.step-text {
+  flex: 12;
+}
+
+.step h3 {
+  flex: 1 30%;
   color: var(--blue);
   font-size: 46px;
-  margin-top: 10px;
+}
+.step-info {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  flex: 2 70%;
 }
 
-.steps p {
-  color: #39a6b2;
-  font-size: 23px;
+.step-text h4 {
+  font-size: 26px;
+  line-height: 1.5;
+  color: var(--blue);
+}
+
+.step-text p {
+  color: var(--aqua-marina);
+  font-size: 15px;
 }
 .steps span {
-  font-size: 38px;
 }
 
 .form-input {
@@ -203,16 +230,14 @@ section {
   font-size: 16px;
 }
 /* HERO STYLES END */
-
 section div h3 {
   color: var(--aqua-marina);
 }
 section div p {
-  color: var(--aqua-marina);
+  color: var(--white);
 }
 
 .trainers {
-  text-align: center;
 }
 
 .trainer {
@@ -256,15 +281,18 @@ section div p {
 }
 .section-title {
   font-size: 55px;
-  display: inline-block;
-  padding: 0 100px 20px 100px;
+  padding-bottom: 20px;
+  text-align: center;
+  margin: 0 auto 35px auto;
+  width: 50%;
+
+  padding: ;
   border-bottom: 3px solid;
-  margin-bottom: 35px;
+  margin-bottom: ;
   color: var(--blue);
 }
 /* REACH OUT STYLES START */
 .contact {
-  text-align: center;
   background: var(--blue);
 }
 .contact-info iframe {
@@ -327,4 +355,7 @@ footer a {
 .fa.fa-heart {
   font-size: 22px;
   color: var(--blood-red);
+}
+.flex-row {
+  display: flex;
 }
