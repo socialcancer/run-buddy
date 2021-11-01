@@ -84,9 +84,8 @@ section {
   background-color: var(--yellow);
   padding: 20px;
   color: var(--blue);
-  /* position: absolute; */
-  /* bottom: 120px;
-  right: 140px; */
+  width: 40%;
+  margin: 3.5%;
 }
 .hero-cta {
   width: 35%;
