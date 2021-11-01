@@ -7,6 +7,7 @@
   --aqua-marina: #3aa6b2;
   --yellow: #fce138;
   --base-font: "Roboto", sans-serif;
+  --white: #fff;
 }
 
 * {
@@ -16,7 +17,7 @@
 }
 
 body {
-  background-color: #fff;
+  background-color: var(--white);
 }
 
 header {
@@ -59,7 +60,7 @@ header nav ul li a {
 }
 
 .main-middle {
-  background-color: white;
+  background-color: var(--white);
   color: var(--aqua-marina);
   font-family: var(--base-font);
   font-size: 1rem;
@@ -70,21 +71,34 @@ section {
 
 /* Hero Style Start */
 .hero {
-  height: 600px;
-  background-image: url("https://static.fullstack-bootcamp.com/module-1/hero-bg.jpg");
+  background-image: url("/assets/images/hero-bg.jpg");
   background-size: cover;
   background-position: center;
-  position: relative;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 .hero-form {
   border: 3px solid var(--blue);
   background-color: var(--yellow);
   padding: 20px;
-  width: 500px;
   color: var(--blue);
-  position: absolute;
-  bottom: 120px;
-  right: 140px;
+  /* position: absolute; */
+  /* bottom: 120px;
+  right: 140px; */
+}
+.hero-cta {
+  width: 35%;
+  text-align: right;
+  margin: 3.5%;
+  color: #fff;
+  font-size: 18px;
+  line-height: 1.3;
+}
+.hero-cta h2 {
+  font-style: italic;
+  font-size: 55px;
+  color: var(--yellow);
 }
 .hero-form h3 {
   font-size: 24px;
@@ -299,12 +313,10 @@ footer h2 {
   color: var(--aqua-marina);
   font-family: var(--base-font);
   font-weight: bold;
-  /* display: inline; */
   font-size: 30px;
   margin: 0;
 }
 footer div {
-  /* float: right; */
   line-height: 1.5;
   text-align: right;
 }
