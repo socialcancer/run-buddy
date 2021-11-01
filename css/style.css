@@ -33,7 +33,6 @@ header h1 {
   color: var(--yellow);
   margin: 0;
   font-family: var(--base-font);
-  /* display: inline; */
 }
 
 header a {
@@ -42,7 +41,6 @@ header a {
 }
 
 header nav {
-  /* float: right; */
   margin: 7px 0;
 }
 
